@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Intro Site Example Blog</title>
-    </head>
-    <body>
-        <header>
-            <h1><a href="/">Example Blog</a></h1>
-        </header>
+{% extends 'blog/base.html' %}
 
-        <article>
-            <time>5/4/2024 1:04</time>
-            <h2><a href="">My first post</a></h2>
-            <p>Some post</p>
+{% block content %}
+    {% for post in posts %}
+        <article class="post">
+            <time class="date">
+                {{ post.published_date }}
+            </time>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
         </article>
-
-    </body>
-</html>
+    {% endfor %}
+{% endblock %}

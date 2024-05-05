@@ -27,7 +27,7 @@ SECRET = '2fq*a6#in#j)nc84@_2p!_)nc6xtlj&s4g#c9t7c1tec9-p=uk'
 SECRET_KEY = 'fq*a6#in#j)nc84@_2p!_)nc6xtlj&s4g#c9t7c1tec9-p=uk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1']
 
@@ -121,6 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
